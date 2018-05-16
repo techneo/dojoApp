@@ -1,5 +1,5 @@
 {
-  "name": "dojo-2-static-content-tutorial",
+  "name": "dojo-2-creating-widgets-tutorial",
   "version": "1.0.0",
   "main": "src/main.ts",
   "scripts": {
@@ -9,14 +9,11 @@
   "dependencies": {
     "@dojo/core": "^2.0.0",
     "@dojo/has": "^2.0.0",
-    "@dojo/i18n": "^2.0.0",
     "@dojo/routing": "^2.0.0",
     "@dojo/shim": "^2.0.0",
     "@dojo/widget-core": "^2.0.0",
-    "@dojo/widgets": "^2.0.0",
-    "npm": "^6.0.1",
-    "to": "^0.2.9",
-    "update": "^0.7.4"
+    "@dojo/i18n": "^2.0.0",
+    "@dojo/widgets": "^2.0.0"
   },
   "devDependencies": {
     "@dojo/cli-build-app": "^2.0.0",
