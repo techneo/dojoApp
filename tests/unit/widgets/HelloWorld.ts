@@ -7,6 +7,6 @@ import HelloWorld from '../../../src/widgets/HelloWorld';
 describe('HelloWorld', () => {
 	it('should render', () => {
 		const h = harness(() => w(HelloWorld, {}));
-		h.expect(() => v('h1', { title: 'I am a title!' }, [ 'Biz-E-Bodies' ]));
+		h.expect(() => v('h1', { title: 'I am a title!' }, [ 'Biz-E-Bodis' ]));
 	});
 });
