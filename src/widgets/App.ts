@@ -7,13 +7,30 @@ import { v, w } from '@dojo/widget-core/d';
 
 import Banner from './Banner';
 import WorkerContainer from './WorkerContainer';
+import { WorkerProperties } from './Worker';
 
 // export followed by default followed by class is ES6 standard
 export default class App extends WidgetBase {
+	private _workerData: WorkerProperties[] = [
+		{
+			firstName: 'Tim',
+			lastName: 'Jones'
+		},
+		{
+			firstName: 'Alicia',
+			lastName: 'Fitzgerald'
+		},
+		{
+			firstName: 'Hans',
+			lastName: 'Mueller'
+		}
+	];
 	protected render() {
 	// To render the Banner as a child of the div
 		return v('div' , [	w(Banner, { }),
-							w(WorkerContainer, {  })
+							w(WorkerContainer, {
+								workerData: this._workerData
+							})
 						]);
 	}
 }
